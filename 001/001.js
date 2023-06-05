@@ -1,4 +1,4 @@
-console.log('hii');
+// console.log('hii');
 // LINEAR SEARCH
 
 let arr = [10, 20, 30, 40, 50, 60, 70, 80];
@@ -20,4 +20,4 @@ const linearSearch = (arr, eleToFind) => {
 const linearSearch2 = (arr, eleToFind) => {
   return arr.indexOf(eleToFind);
 };
-console.log(linearSearch2(arr, eleToFind), 'hii');
+// console.log(linearSearch2(arr, eleToFind), 'hii');
