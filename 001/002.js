@@ -12,8 +12,8 @@ const reverseAnArr = (arr) => {
   }
   // return arr;
 };
-reverseAnArr(arr);
-console.log(arr, 'reverse');
+// reverseAnArr(arr);
+// console.log(arr, 'reverse');
 
 // METHOD 2
 const reverseAnArr2 = (arr) => {
