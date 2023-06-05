@@ -1,19 +1,23 @@
 console.log('hii');
 // LINEAR SEARCH
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8];
-let eleToFind = 5;
-
+let arr = [10, 20, 30, 40, 50, 60, 70, 80];
+let eleToFind = 50;
+// METHOD 1
 const linearSearch = (arr, eleToFind) => {
   for (let i = 0; i < arr.length; i++) {
     console.log(i);
     if (arr[i] === eleToFind) {
       console.log(arr[i]);
-      return arr[i];
+      return i;
     }
-    return -1;
   }
+  return -1;
 };
-console.log(linearSearch(arr, eleToFind), 'hii');
-// i =0
-//
+// console.log(linearSearch(arr, eleToFind), 'hii');
+
+// METHOD 2
+const linearSearch2 = (arr, eleToFind) => {
+  return arr.indexOf(eleToFind);
+};
+console.log(linearSearch2(arr, eleToFind), 'hii');
