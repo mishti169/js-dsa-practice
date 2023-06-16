@@ -1,5 +1,5 @@
 const arr = [1, 2, 3, 4, 5, 6];
-const d = 3;
+const d = 4;
 // Method 1 ;;
 // First store the elements from index d to N-1 into the temp array.
 // Then store the first d elements of the original array into the temp array.
@@ -40,4 +40,4 @@ const rotationLeftD2 = (arr, d) => {
   }
   console.log(arr);
 };
-rotationLeftD2(arr, d);
+// rotationLeftD2(arr, d);
