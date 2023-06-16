@@ -19,4 +19,4 @@ const reverseStr2 = (str) => {
   return newStr;
 };
 
-console.log(reverseStr2(str), 'str2');
+// console.log(reverseStr2(str), 'str2');

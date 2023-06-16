@@ -2,3 +2,4 @@
 001.js -> linear search
 002.js-> reverseAnArr
 003.js-> reverseAstr
+004.js-> leftRotationD
