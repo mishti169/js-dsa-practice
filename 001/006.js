@@ -16,4 +16,13 @@ const printNum = (n) => {
   printNum(n - 1);
   console.log(n);
 };
-printNum(num);
+// printNum(num);
+
+const printNum1 = (n) => {
+  if (n === 0) {
+    return;
+  }
+  console.log(n);
+  return printNum1(n - 1);
+};
+printNum1(num);
