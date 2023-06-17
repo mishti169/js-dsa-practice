@@ -32,5 +32,21 @@ const insertATTheMiddle = (arr, pos, val) => {
   }
   arr[pos] = val;
 };
-insertATTheMiddle(arr, pos, val);
-console.log(arr, 'hii');
+// insertATTheMiddle(arr, pos, val);
+// console.log(arr, 'hii');
+
+// DELET METHOD
+
+const findVal = 6;
+
+const findELe = (findVal, arr) => {
+  let i;
+  for (i = 0; i < arr.length; i++) {
+    arr[i] === findVal;
+    return i;
+  }
+  return -1;
+};
+const deletElement = (findVal, arr) => {
+  findELe(findVal, arr);
+};
