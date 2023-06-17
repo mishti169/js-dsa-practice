@@ -19,7 +19,18 @@ const insertAtTheEnd = (arr, n) => {
   arr.push(n);
 };
 insertAtTheEnd(arr, n);
-console.log(arr);
+// console.log(arr);
 
 //insert at the middle
-const insertATTheMiddle = () => {};
+const pos = 2;
+const val = 10;
+const insertATTheMiddle = (arr, pos, val) => {
+  debugger;
+  let i = arr.length - 1;
+  for (i; i >= pos; i--) {
+    arr[i + 1] = arr[i];
+  }
+  arr[pos] = val;
+};
+insertATTheMiddle(arr, pos, val);
+console.log(arr, 'hii');
