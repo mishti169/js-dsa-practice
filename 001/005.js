@@ -25,7 +25,6 @@ const insertAtTheEnd = (arr, n) => {
 const pos = 0;
 const val = 10;
 const insertATTheMiddle = (arr, pos, val) => {
-  debugger;
   let i = arr.length - 1;
   for (i; i >= pos; i--) {
     arr[i + 1] = arr[i];
@@ -43,13 +42,13 @@ const findVal = 6;
 const findELe = (findVal, arr) => {
   let i;
   for (i = 0; i < arr.length; i++) {
-    arr[i] === findVal;
-    return i;
+    if (arr[i] === findVal) {
+      return i;
+    }
   }
   return -1;
 };
 const deletElement = (findVal, arr) => {
-  debugger;
   const pos = findELe(findVal, arr);
   if (pos === -1) {
     return arr.length;
@@ -59,8 +58,9 @@ const deletElement = (findVal, arr) => {
   for (i = pos; i < arr.length - 1; i++) {
     arr[i] = arr[i + 1];
   }
-  return arr.length - 1;
+  arr.length = arr.length - 1;
+  return arr.length;
 };
-
-deletElement(findVal, arr);
-console.log(arr);
+// console.log(arr);
+// deletElement(findVal, arr);
+// console.log(arr);
