@@ -18,11 +18,11 @@ const searchInUnsortedArr = (arr, n) => {
 const insertAtTheEnd = (arr, n) => {
   arr.push(n);
 };
-insertAtTheEnd(arr, n);
+// insertAtTheEnd(arr, n);
 // console.log(arr);
 
 //insert at the middle
-const pos = 2;
+const pos = 0;
 const val = 10;
 const insertATTheMiddle = (arr, pos, val) => {
   debugger;
