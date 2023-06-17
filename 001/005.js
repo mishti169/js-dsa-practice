@@ -1,6 +1,6 @@
 const arr = [3, 5, 1, 6, 9, 4];
 const n = 6;
-
+// ********************************************************************************************************
 //SEARCH METHOD
 const searchInUnsortedArr = (arr, n) => {
   for (let i = 0; i < arr.length; i++) {
@@ -11,7 +11,7 @@ const searchInUnsortedArr = (arr, n) => {
   return -1;
 };
 // console.log(searchInUnsortedArr(arr, n));
-
+// **********************************************************************************************************
 // INSERT METHOD
 
 // insert at the end
@@ -35,6 +35,7 @@ const insertATTheMiddle = (arr, pos, val) => {
 // insertATTheMiddle(arr, pos, val);
 // console.log(arr, 'hii');
 
+// ******************************************************************************************************
 // DELET METHOD
 
 const findVal = 6;
@@ -48,6 +49,7 @@ const findELe = (findVal, arr) => {
   return -1;
 };
 const deletElement = (findVal, arr) => {
+  debugger;
   const pos = findELe(findVal, arr);
   if (pos === -1) {
     return arr.length;
@@ -59,3 +61,6 @@ const deletElement = (findVal, arr) => {
   }
   return arr.length - 1;
 };
+
+deletElement(findVal, arr);
+console.log(arr);
