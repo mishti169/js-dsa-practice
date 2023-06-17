@@ -48,5 +48,14 @@ const findELe = (findVal, arr) => {
   return -1;
 };
 const deletElement = (findVal, arr) => {
-  findELe(findVal, arr);
+  const pos = findELe(findVal, arr);
+  if (pos === -1) {
+    return arr.length;
+  }
+
+  let i;
+  for (i = pos; i < arr.length - 1; i++) {
+    arr[i] = arr[i + 1];
+  }
+  return arr.length - 1;
 };
