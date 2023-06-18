@@ -5,3 +5,4 @@
 004.js-> leftRotationD
 005----> search del and insert in unsorted arr
 006----> RECURSION
+007----> BinarySearch
