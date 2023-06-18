@@ -4,4 +4,4 @@
 003.js-> reverseAstr
 004.js-> leftRotationD
 005----> search del and insert in unsorted arr
-006----> recursion
+006----> RECURSION
