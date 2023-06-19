@@ -27,7 +27,6 @@ const binarySearch = (arr, ele, low, high) => {
 
 //Binary Search with duplicates ( both  index should be return )
 //1ST occurence
-console.log('hiii');
 const array = [1, 2, 3, 3, 3, 3, 4, 5, 6, 7, 8, 9];
 const key1st = 3;
 
