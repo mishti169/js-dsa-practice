@@ -78,5 +78,5 @@ const doMyJob = (arr, ele) => {
   arr.splice(startIndex, delCount);
 };
 
-doMyJob(arr3, remEle);
-console.log(arr3);
+// doMyJob(arr3, remEle);
+// console.log(arr3);
