@@ -38,9 +38,9 @@ const deleteInSorted = (arr2, delEle) => {
 deleteInSorted(arr2, delEle);
 console.log(arr2);
 
-//Method 2 using BinarySearch O(log N)
+//Method 2 using BinarySearch O(log N)////////////////////
 const arr3 = [1, 2, 3, 4, 4, 4, 5, 6, 7, 8, 9];
-const remEle = 5;
+const remEle = 10;
 
 const binarySearch = (arr, ele, low, high) => {
   const mid = Math.floor((low + high) / 2);
@@ -65,6 +65,9 @@ const binarySearch = (arr, ele, low, high) => {
 const doMyJob = (arr, ele) => {
   //do bs
   const startIndex = binarySearch(arr, ele, 0, arr.length - 1);
+  if (startIndex === -1) {
+    throw Error('you stupid fellow value does not exist');
+  }
   // iterate  ele===i
   let i = startIndex;
   while (ele === arr[i]) {
