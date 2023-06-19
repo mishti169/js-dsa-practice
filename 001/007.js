@@ -1,4 +1,4 @@
-//**************************************************************
+//**************************************************************************************
 // BInary Search Method
 
 const arr = [10, 20, 30, 40, 50, 60];
@@ -19,11 +19,13 @@ const binarySearch = (arr, ele, low, high) => {
     return binarySearch(arr, ele, low, mid - 1);
   }
 };
+// const index = binarySearch(arr, ele, 0, arr.length - 1);
+// console.log(index);
 
-const index = binarySearch(arr, ele, 0, arr.length - 1);
-console.log(index);
+//HOME WORK//
+//**************************************************************************************
 
-//************************************************************************
-
-//HOME WORK
 //Binary Search with duplicates ( both  index should be return )
+//1ST occurence
+
+const array = [1, 2, 3, 3, 3, 3, 4, 5, 6, 7, 8, 9];
