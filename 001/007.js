@@ -78,5 +78,5 @@ const binarySearch3 = (array, keyLast, low, high) => {
     return binarySearch3(array, keyLast, low, mid - 1);
   }
 };
-const i = binarySearch3(array2, keyLast, 0, array.length - 1);
-console.log(i);
+// const i = binarySearch3(array2, keyLast, 0, array.length - 1);
+// console.log(i);
