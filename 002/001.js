@@ -1,4 +1,4 @@
-console.log('hii i am linkedList');
+// console.log('hii i am linkedList');
 
 class Node {
   constructor(val) {
@@ -10,19 +10,37 @@ class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
+    this.size = 0;
   }
 
   push(val) {
     const node = new Node(val);
+    if (this.head === null) {
+      this.head = node;
+      this.tail = node;
+    }
 
-    this.head = node;
-    this.tail = node;
-
-    const temp = this.head;
+    let temp = this.head;
+    while (temp.next !== null) {
+      temp.next = temp;
+    }
+    this.tail = temp.next;
   }
 
-  print() {}
+  print() {
+    console.log('hiii i am print ');
+    let temp = this.head;
+    while (temp !== null) {
+      console.log(temp.val);
+      temp = temp.next;
+
+      // return;
+    }
+  }
 }
 
 const ll = new LinkedList();
 ll.push(10);
+ll.push(20);
+// ll.push(30);
+ll.print();
