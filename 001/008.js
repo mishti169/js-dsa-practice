@@ -35,8 +35,8 @@ const deleteInSorted = (arr2, delEle) => {
   }
 };
 
-deleteInSorted(arr2, delEle);
-console.log(arr2);
+// deleteInSorted(arr2, delEle);
+// console.log(arr2);
 
 //Method 2 using BinarySearch O(log N)////////////////////
 const arr3 = [1, 2, 3, 4, 4, 4, 5, 6, 7, 8, 9];
