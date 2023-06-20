@@ -35,8 +35,8 @@ class LinkedList {
   }
 }
 
-const ll = new LinkedList();
-ll.push(10);
-ll.push(20);
-ll.push(30);
-ll.print();
+// const ll = new LinkedList();
+// ll.push(10);
+// ll.push(20);
+// ll.push(30);
+// ll.print();
