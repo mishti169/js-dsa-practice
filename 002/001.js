@@ -31,8 +31,6 @@ class LinkedList {
     while (temp !== null) {
       console.log(temp.val);
       temp = temp.next;
-
-      // return;
     }
   }
 }
