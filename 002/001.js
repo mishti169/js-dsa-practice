@@ -58,10 +58,9 @@ class LinkedList {
 }
 
 const ll = new LinkedList();
-// ll.push(10);
-// ll.push(20);
-// ll.push(30);
-// ll.pop();
-// ll.pop();
-// ll.pop();
+ll.push(10);
+ll.push(20);
+ll.push(30);
+ll.pop();
+ll.pop();
 ll.print();
