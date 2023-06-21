@@ -81,5 +81,7 @@ const dll = new DoublyLinkedList();
 // dll.push(40);
 // dll.pop();
 dll.append(9);
+dll.append(8);
+dll.append(7);
 dll.print();
 // dll.printReverse();
