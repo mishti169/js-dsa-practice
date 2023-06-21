@@ -48,6 +48,17 @@ class DoublyLinkedList {
       temp = temp.next;
     }
   }
+
+  printReverse() {
+    if (this.head === null) {
+      throw Error('head is already null');
+    }
+    let temp = this.tail;
+    while (temp !== null) {
+      console.log(temp.val);
+      temp = temp.prev;
+    }
+  }
 }
 const dll = new DoublyLinkedList();
 dll.push(10);
@@ -56,3 +67,4 @@ dll.push(30);
 dll.push(40);
 dll.pop();
 dll.print();
+dll.printReverse();
