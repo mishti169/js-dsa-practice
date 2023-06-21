@@ -15,8 +15,20 @@ class DoublyLinkedList {
     this.size = 0;
   }
 
+  append(val) {
+    const node = new Node(val);
+    if (!this.head) {
+      this.head = node;
+      this.tail = node;
+      return;
+    }
+    node.next = this.head;
+    this.head.prev = node;
+    this.head = node;
+  }
   push(val) {
     const node = new Node(val);
+    this.size++;
 
     if (this.head === null) {
       this.head = node;
@@ -30,7 +42,9 @@ class DoublyLinkedList {
   }
 
   pop() {
-    debugger;
+    if (this.head === null) {
+      throw Error('list is empty');
+    }
     let temp = this.tail.prev;
     this.tail.prev = null;
     temp.next = null;
@@ -51,7 +65,7 @@ class DoublyLinkedList {
 
   printReverse() {
     if (this.head === null) {
-      throw Error('head is already null');
+      throw Error('list is empty');
     }
     let temp = this.tail;
     while (temp !== null) {
@@ -61,10 +75,11 @@ class DoublyLinkedList {
   }
 }
 const dll = new DoublyLinkedList();
-dll.push(10);
-dll.push(20);
-dll.push(30);
-dll.push(40);
-dll.pop();
+// dll.push(10);
+// dll.push(20);
+// dll.push(30);
+// dll.push(40);
+// dll.pop();
+dll.append(9);
 dll.print();
-dll.printReverse();
+// dll.printReverse();
