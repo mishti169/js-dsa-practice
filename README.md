@@ -13,3 +13,4 @@
 <!-- 002  --> **LinkedList** -->
 
 001 ---> singly LL
+002 ---> doubly LL
