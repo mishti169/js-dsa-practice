@@ -14,3 +14,5 @@
 
 001 ---> singly LL
 002 ---> doubly LL
+003 ---> circular singly LL
+004 ---> circular doubly LL
