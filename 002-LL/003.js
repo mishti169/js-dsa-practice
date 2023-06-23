@@ -44,11 +44,13 @@ class CircularSinglyLL {
     this.tail = node;
     this.tail.next = this.head;
   }
+
+  pop() {}
 }
 
 const csll = new CircularSinglyLL();
 csll.append(9);
 csll.append(8);
-// csll.push(10);
-// csll.push(20);
+csll.push(10);
+csll.push(20);
 console.log(csll);
