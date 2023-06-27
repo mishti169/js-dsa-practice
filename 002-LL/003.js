@@ -52,16 +52,17 @@ class CircularSinglyLL {
     if (this.head === this.tail) {
       this.head = null;
       this.tail = null;
+      this.size = 0;
       return;
     }
 
     do {
       temp = temp.next;
-
-      // temp.next = null;
-      // this.tail = temp;
-      // this.tail.next = this.head;
     } while (temp.next !== this.head);
+    temp.next = null;
+    this.tail = temp;
+    this.tail.next = this.head;
+    this.size--;
   }
 }
 
@@ -71,5 +72,5 @@ csll.append(8);
 csll.push(10);
 csll.push(20);
 csll.push(30);
-// csll.pop();
+csll.pop();
 console.log(csll);
