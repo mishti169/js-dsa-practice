@@ -65,13 +65,28 @@ class CircularSinglyLL {
     this.tail.next = this.head;
     this.size--;
   }
+
+  print(){
+    console.log('i am print')
+    if (this.head === null) {
+      throw Error('head is already null');
+    }
+
+    let temp = this.head
+    while(temp != null){
+      console.log(temp.val)
+      temp=temp.next;
+
+    }
+  }
 }
 
 const csll = new CircularSinglyLL();
-csll.append(9);
-csll.append(8);
 csll.push(10);
 csll.push(20);
 csll.push(30);
+csll.append(9);
+csll.append(8);
 csll.pop();
-console.log(csll);
+// csll.print()
+// console.log(csll);
