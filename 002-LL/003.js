@@ -55,19 +55,20 @@ class CircularSinglyLL {
       return;
     }
 
-    while (temp.next.next !== null) {
+    do {
       temp = temp.next;
-    }
-    temp.next = null;
-    this.tail = temp;
-    this.tail.next = this.head;
+
+      temp.next = null;
+      this.tail = temp;
+      this.tail.next = this.head;
+    } while (temp.next !== this.head);
   }
 }
 
 const csll = new CircularSinglyLL();
-csll.append(9);
 csll.append(8);
+csll.append(9);
 csll.push(10);
 csll.push(20);
-// csll.pop();
+csll.pop();
 console.log(csll);
