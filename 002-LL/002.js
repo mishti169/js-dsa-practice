@@ -1,4 +1,4 @@
-console.log('hey there! ');
+// console.log('hey there! ');
 
 class Node {
   constructor(val) {
@@ -80,8 +80,8 @@ const dll = new DoublyLinkedList();
 // dll.push(30);
 // dll.push(40);
 // dll.pop();
-dll.append(9);
-dll.append(8);
-dll.append(7);
-dll.print();
+// dll.append(9);
+// dll.append(8);
+// dll.append(7);
+// dll.print();
 // dll.printReverse();

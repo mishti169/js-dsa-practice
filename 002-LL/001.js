@@ -1,4 +1,4 @@
-console.log('hii i am linkedList');
+// console.log('hii i am linkedList');
 
 class Node {
   constructor(val) {
