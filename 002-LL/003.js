@@ -43,6 +43,25 @@ class CircularSinglyLL {
     this.tail = node;
     this.tail.next = this.head;
   }
+  pop() {
+    console.log('i am pop');
+    let temp = this.head;
+    if (this.head === null) {
+      throw Error('list is empty');
+    }
+    if (this.head === this.tail) {
+      this.head = null;
+      this.tail = null;
+      return;
+    }
+
+    while (temp.next.next !== null) {
+      temp = temp.next;
+    }
+    temp.next = null;
+    this.tail = temp;
+    this.tail.next = this.head;
+  }
 }
 
 const csll = new CircularSinglyLL();
@@ -50,5 +69,5 @@ csll.append(9);
 csll.append(8);
 csll.push(10);
 csll.push(20);
+// csll.pop();
 console.log(csll);
-
