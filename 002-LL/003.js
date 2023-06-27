@@ -91,4 +91,3 @@ csll.append(8);
 csll.pop();
 csll.pop();
 csll.print();
-console.log(csll);
