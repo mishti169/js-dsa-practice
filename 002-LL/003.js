@@ -58,8 +58,9 @@ class CircularSinglyLL {
 
     do {
       temp = temp.next;
-    } while (temp !== this.head);
-    temp.next = null;
+    } while (temp.next !== this.tail);
+
+    temp.next = this.head;
     this.tail = temp;
     this.tail.next = this.head;
     this.size--;
