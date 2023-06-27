@@ -1,4 +1,4 @@
-// console.log('hey there! ');
+// console.log('hey there! i am doubly LL');
 
 class Node {
   constructor(val) {

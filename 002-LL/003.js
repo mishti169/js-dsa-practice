@@ -1,3 +1,5 @@
+console.log('hey there! i am circular doubly LL');
+
 class Node {
   constructor(val) {
     this.val = val;
@@ -44,7 +46,7 @@ class CircularSinglyLL {
     this.tail.next = this.head;
   }
   pop() {
-    console.log('i am pop');
+    // console.log('i am pop');
     let temp = this.head;
     if (this.head === null) {
       throw Error('list is empty');
@@ -66,18 +68,17 @@ class CircularSinglyLL {
     this.size--;
   }
 
-  print(){
-    console.log('i am print')
+  print() {
+    // console.log('i am print');
     if (this.head === null) {
       throw Error('head is already null');
     }
 
-    let temp = this.head
-    while(temp != null){
-      console.log(temp.val)
-      temp=temp.next;
-
-    }
+    let temp = this.head;
+    do {
+      console.log(temp.val);
+      temp = temp.next;
+    } while (temp != this.head);
   }
 }
 
@@ -88,5 +89,6 @@ csll.push(30);
 csll.append(9);
 csll.append(8);
 csll.pop();
-// csll.print()
-// console.log(csll);
+csll.pop();
+csll.print();
+console.log(csll);
