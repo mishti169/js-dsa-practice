@@ -78,19 +78,17 @@ class LinkedList {
   reverseLl() {
     let curr = this.head;
     let prev = null;
+    let next;
     if (!this.head) {
       throw Error('LinkedList is Empty');
     }
-    console.log(curr, 'hi');
-    // while (curr !== null) {
-    for (let i = 0; i < 3; i++) {
-      console.log('hi');
-      // }
+
+    while (curr !== null) {
+      next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
     }
-    // let temp = curr.next;
-    // curr.next = prev;
-    // prev = curr;
-    // curr = temp;}
   }
 }
 
