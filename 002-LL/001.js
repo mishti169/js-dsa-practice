@@ -15,6 +15,7 @@ class LinkedList {
 
   push(val) {
     const node = new Node(val);
+    this.size++;
     if (this.head === null) {
       this.head = node;
       this.tail = node;
@@ -26,6 +27,7 @@ class LinkedList {
   }
 
   pop() {
+    this.size--;
     let temp = this.head;
     if (this.head === null) {
       throw Error('first go and get some food then poop');
@@ -70,18 +72,25 @@ class LinkedList {
       temp = temp.next;
     }
     temp.next = temp.next.next;
+    this.size--;
   }
 
   reverseLl() {
-    //     Check if the head is NULL. If it is, it means the list is empty, so we return the head as it is.
-    // Create two pointers, "current" and "previous," and initialize "current" with the head of the list and "previous" with NULL.
-    // Enter a loop that continues until "current" becomes NULL.
-    // Inside the loop, create a temporary pointer, "temp," and store the next node of the current node.
-    // Set the "next" pointer of the current node to the previous node, effectively reversing the pointer direction.
-    // Update the "previous" pointer to the current node.
-    // Update the "current" pointer to the next node (stored in "temp") for the next iteration.
-    // Once the loop finishes, all the pointers have been reversed, and the "previous" pointer will be pointing to the new head of the reversed list.
-    // Return the "previous" pointer as the new head of the reversed list.
+    let curr = this.head;
+    let prev = null;
+    if (!this.head) {
+      throw Error('LinkedList is Empty');
+    }
+    console.log(curr, 'hi');
+    // while (curr !== null) {
+      for (let i = 0; i < 3; i++) {
+        console.log('hi');
+      // }
+    }
+    // let temp = curr.next;
+    // curr.next = prev;
+    // prev = curr;
+    // curr = temp;}
   }
 }
 
@@ -92,6 +101,7 @@ ll.push(30);
 ll.push(40);
 ll.push(50);
 // ll.pop();
-ll.deletAtStart();
-ll.deletAnode(3);
+// ll.deletAtStart();
+// ll.deletAnode(3);
+ll.reverseLl();
 ll.print();
