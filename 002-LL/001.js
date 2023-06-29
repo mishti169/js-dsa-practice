@@ -83,8 +83,8 @@ class LinkedList {
     }
     console.log(curr, 'hi');
     // while (curr !== null) {
-      for (let i = 0; i < 3; i++) {
-        console.log('hi');
+    for (let i = 0; i < 3; i++) {
+      console.log('hi');
       // }
     }
     // let temp = curr.next;
@@ -103,5 +103,5 @@ ll.push(50);
 // ll.pop();
 // ll.deletAtStart();
 // ll.deletAnode(3);
-ll.reverseLl();
+// ll.reverseLl();
 ll.print();
