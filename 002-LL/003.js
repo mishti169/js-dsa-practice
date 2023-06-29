@@ -1,4 +1,4 @@
-console.log('hey there! i am circular doubly LL');
+// console.log('hey there! i am circular doubly LL');
 
 class Node {
   constructor(val) {
@@ -82,12 +82,12 @@ class CircularSinglyLL {
   }
 }
 
-const csll = new CircularSinglyLL();
-csll.push(10);
-csll.push(20);
-csll.push(30);
-csll.append(9);
-csll.append(8);
-csll.pop();
-csll.pop();
-csll.print();
+// const csll = new CircularSinglyLL();
+// csll.push(10);
+// csll.push(20);
+// csll.push(30);
+// csll.append(9);
+// csll.append(8);
+// csll.pop();
+// csll.pop();
+// csll.print();
