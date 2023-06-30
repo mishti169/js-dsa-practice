@@ -89,6 +89,7 @@ class LinkedList {
       prev = curr;
       curr = next;
     }
+    this.head = prev;
   }
 }
 
@@ -101,5 +102,5 @@ ll.push(50);
 // ll.pop();
 // ll.deletAtStart();
 // ll.deletAnode(3);
-// ll.reverseLl();
+ll.reverseLl();
 ll.print();
