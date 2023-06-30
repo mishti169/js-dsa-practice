@@ -102,5 +102,5 @@ ll.push(50);
 // ll.pop();
 // ll.deletAtStart();
 // ll.deletAnode(3);
-ll.reverseLl();
-ll.print();
+// ll.reverseLl();
+// ll.print();
