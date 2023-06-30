@@ -1,6 +1,6 @@
 console.log('i m selection sort');
 
-let arr = [5, 3, 7, 1, 9, 4];
+let arr = [5, 2, 7, 0, -9, 4];
 
 // function swap(i1, i2) {
 //   let temp = arr[i1];
@@ -8,14 +8,13 @@ let arr = [5, 3, 7, 1, 9, 4];
 //   arr[i2] = temp;
 // }
 
-// let smallest = arr[0];
+let smallest = arr[0];
+console.log(smallest, 'smallest');
 
-// for (let j = 0; j < arr.length; j++) {
-//   for (let i = 1; i < arr.length; i++) {
-//     if (arr[i] < smallest) {
-//       smallest = arr[i];
-//     }
-//   }
-// }
-
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] < smallest) {
+    smallest = arr[i];
+  }
+}
+console.log(smallest, 'after loop smllets');
 // // swap(arr[i],  smallest);
