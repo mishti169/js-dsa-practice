@@ -9,12 +9,12 @@ let arr = [5, 2, 7, 0, -9, 4];
 // }
 
 let smallest = arr[0];
-console.log(smallest, 'smallest');
 
 for (let i = 1; i < arr.length; i++) {
   if (arr[i] < smallest) {
     smallest = arr[i];
   }
 }
-console.log(smallest, 'after loop smllets');
-// // swap(arr[i],  smallest);
+
+// swap(arr[i],  smallest);
+console.log(smallest, 'smallest');
