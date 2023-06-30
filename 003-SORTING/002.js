@@ -8,7 +8,7 @@ let arr = [5, 3, 7, 1, 9, 4];
 //   arr[i2] = temp;
 // }
 
-let smallest = j;
+// let smallest = arr[0];
 
 // for (let j = 0; j < arr.length; j++) {
 //   for (let i = 1; i < arr.length; i++) {
