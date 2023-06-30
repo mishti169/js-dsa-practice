@@ -14,3 +14,5 @@ import './001-ARR/009.js';
 import './002-LL/001.js';
 import './002-LL/002.js';
 import './002-LL/003.js';
+import './003-SORTING/001.js';
+import './003-SORTING/002.js';
