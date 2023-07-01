@@ -1,2 +1,1 @@
-// console.log('im sorting');
-//
+console.log('im bubble sorting code baki');

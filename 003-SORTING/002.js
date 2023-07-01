@@ -1,7 +1,6 @@
 console.log('i m selection sort');
 
 let arr = [4, 7, -20, 0, 9, 1, -1];
-console.log(arr);
 const swap = (i1, i2) => {
   let temp = arr[i1];
   arr[i1] = arr[i2];
@@ -17,4 +16,4 @@ for (let j = 0; j < arr.length; j++) {
   }
   swap(j, smallestIndex);
 }
-console.log(arr);
+// console.log(arr);

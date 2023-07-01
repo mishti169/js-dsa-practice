@@ -1,4 +1,4 @@
-// console.log('hey there! i am circular doubly LL');
+// console.log('hey there! i am circular singly LL');
 
 class Node {
   constructor(val) {
