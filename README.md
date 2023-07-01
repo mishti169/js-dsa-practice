@@ -21,5 +21,5 @@
 
 001 ---> bubble sort
 002 ---> selection sort
-003 --->
-004 --->
+003 ---> insertion sort
+004 ---> merge sort

@@ -1,4 +1,4 @@
-console.log('i m selection sort');
+// console.log('i m selection sort');
 
 let arr = [4, 7, -20, 0, 9, 1, -1];
 const swap = (i1, i2) => {
