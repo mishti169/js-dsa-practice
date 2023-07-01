@@ -33,7 +33,25 @@ const left = [1, 3, 5, 7];
 const right = [20, 30, 50, 70, 90];
 // mergeArr(left, right);
 
-const mergeSort = () => {};
+const mergeSort = (arr) => {
+  // base-case ..return if arr has left 1 ele or arr.length is 1
+  if (arr.length <= 1) {
+    return arr;
+  }
+  // find the middle index of arr
+  const mid = Math.floor(arr.length / 2);
+
+  // divide arr in to parts
+  const left = arr.slice(0, mid);
+  const right = arr.slice(mid);
+
+  //recursively sort the right and left parts of unsorted arr
+  const sortedLeft = mergeSort(left);
+  const sortedRight = mergeSort(right);
+
+  // return merged and sorted arr
+  return mergeArr(sortedLeft, sortedRight);
+};
 
 const numArr = [9, 6, 1, 4, 0, 2, 3, 5, 8, 7];
-mergeSort(numArr);
+console.log(mergeSort(numArr));
