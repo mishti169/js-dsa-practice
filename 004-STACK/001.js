@@ -40,22 +40,22 @@ class Stack {
 
 const stack = new Stack();
 
-stack.push(1);
-stack.push(2);
-stack.push(3);
-stack.push(4);
-console.log(stack.getSize()); // output 4
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+// stack.push(4);
+// console.log(stack.getSize()); // output 4
 
-stack.pop();
-stack.pop();
-stack.pop();
-console.log(stack.getSize()); // output 1
-console.log(stack.isEmpty()); // false
+// stack.pop();
+// stack.pop();
+// stack.pop();
+// console.log(stack.getSize()); // output 1
+// console.log(stack.isEmpty()); // false
 
-stack.pop();
-console.log(stack.isEmpty()); // true
+// stack.pop();
+// console.log(stack.isEmpty()); // true
 
-stack.push(10);
-console.log(stack.peek()); // 10
-stack.clear();
-console.log(stack.isEmpty()); // true
+// stack.push(10);
+// console.log(stack.peek()); // 10
+// stack.clear();
+// console.log(stack.isEmpty()); // true
