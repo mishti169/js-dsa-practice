@@ -53,5 +53,5 @@ const mergeSort = (arr) => {
   return mergeArr(sortedLeft, sortedRight);
 };
 
-const numArr = [9, 6, 1, 4, 0, 2, 3, 5, 8, 7];
-console.log(mergeSort(numArr));
+// const numArr = [9, 6, 1, 4, 0, 2, 3, 5, 8, 7];
+// console.log(mergeSort(numArr));
