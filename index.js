@@ -19,3 +19,5 @@ import './003-SORTING/001.js';
 import './003-SORTING/002.js';
 import './003-SORTING/003.js';
 import './003-SORTING/004.js';
+import './004-STACK/001.js';
+import './005-QUEUE/001.js';
