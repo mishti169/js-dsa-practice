@@ -22,3 +22,4 @@ import './003-SORTING/004.js';
 import './004-STACK/001.js';
 import './004-STACK/002.js';
 import './005-QUEUE/001.js';
+import './005-QUEUE/002.js';

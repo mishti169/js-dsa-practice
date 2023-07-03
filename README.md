@@ -25,4 +25,11 @@
 004 ---> merge sort
 
 <!-- 004  --> **STack** -->
+
+001 ---> stack using array
+002 ---> stack using LL
+
 <!-- 005  --> **Queue** -->
+
+001 ---> queue using array
+002 ---> queue using LL
