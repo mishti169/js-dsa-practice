@@ -5,12 +5,23 @@ class Queue{
     this.items = []
   }
 
+
+// check if queue is empty
+isEmpty(){
+  return this.items.length ===0;
+}
 // add an item to back 
 enqueue(val){
   this.items.push(val);
-
 }
 
+//remove and return the front item from the q
+dequeue(){
+if(this.isEmpty()){
+  return null;
+}
+  return this.items.shift()
+}
 
 
 
