@@ -1,4 +1,4 @@
-console.log('hii')
+console.log('hii', 123)
 
 class Queue{
   constructor(){
